@@ -1,0 +1,699 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#wrap {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    left: 15vw;
+}
+
+header ul li {
+    margin: 1.5vw;
+}
+
+
+#main {
+    width: 100vw;
+    height: 50vw;
+    /* border: 4px solid red; */
+    position: relative;
+}
+
+#main .main-left {
+    width: 65%;
+    height: 50vw;
+    background-color: #939393;
+    float: left;
+}
+
+#main .main-right {
+    width: 35%;
+    height: 50vw;
+    background-color: #bdbdbd;
+    float: right;
+}
+
+#main h1 {
+    font-size: calc(100vw * 400 / 1920);
+    position: absolute;
+    bottom: -4vw;
+    color: #444444;
+    font-weight: 800;
+}
+
+#main h2 {
+    font-size: calc(100vw * 110 / 1920);
+    position: absolute;
+    left: 1.5vw;
+    top: 24vw;
+    font-weight: 800;
+    color: #b4b4b4;
+}
+
+#main .main-sub-txt {
+    list-style: none;
+    text-align: right;
+    position: relative;
+    right: 1.5vw;
+    top: 20vw;
+    font-size: calc(100vw * 20 / 1920);
+}
+
+#main .main-sub-txt li {
+    margin-bottom: 0.4vw;
+}
+
+#main .main-sub-txt strong {
+    position: relative;
+    bottom: 2vw;
+    font-size: calc(100vw * 28 / 1920);
+}
+
+
+#overview {
+    width: 100vw;
+    height: 20vw;
+    /* border: 4px solid red; */
+    margin-top: 15vw;
+}
+
+#overview .top-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw;
+}
+
+#overview .line {
+    width: 72vw;
+    border: 0.02vw solid black;
+    margin-right: 1vw;
+}
+
+#overview .top-text h1 {
+    font-size: calc(100vw * 25 / 1920);
+    font-weight: 400;
+}
+
+#overview .top-text h1 span {
+    font-size: calc(100vw * 40 / 1920);
+    font-weight: 800;
+}
+
+#overview p {
+    padding: 3vw;
+    line-height: 150%;
+    position: relative;
+    bottom: 3vw;
+    font-size: calc(100vw * 26 / 1920);
+}
+
+
+#profile {
+    width: 100vw;
+    height: 60vw;
+    /* border: 4px solid red; */
+    position: relative;
+    margin-top: 12vw;
+}
+
+#profile .profile-str {
+    font-size: calc(100vw * 280 / 1920);
+    transform: rotate(90deg);
+    font-weight: 800;
+    position: absolute;
+    right: -9vw;
+    top: 15vw;
+    color: #E2E2E2;
+}
+
+#profile .profile-content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#profile .profile-content .overview-year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+#profile .profile-content .overview-year li {
+    border-right: 0.2vw solid #3b3b3b;
+    height: 20vw;
+    width: 24%;
+    font-weight: 300;
+    font-size: calc(100vw * 22 / 1920);
+    padding-left: 3vw;
+}
+
+#profile .profile-content .overview-year li p {
+    color: #3b3b3b;
+}
+
+#profile .profile-content .overview-year li:nth-child(1) {
+    border-left: 0.2vw solid #3b3b3b;
+}
+
+#profile .profile-content .overview-year strong {
+    font-size: calc(100vh * 65 / 1920);
+}
+
+#profile .profile-content .overview-year p {
+    font-weight: 400;
+    position: relative;
+    top: 2vh;
+}
+
+#profile dl {
+    position: relative;
+    bottom: 6vw;
+}
+
+#profile dt {
+    font-size: calc(100vw * 55 / 1920);
+    font-weight: 700;
+    color: #3b3b3b;
+}
+
+#profile dt span {
+    color: #3b3b3b;
+    font-size: calc(100vw * 40 / 1920);
+    margin-left: 0.4vw;
+    font-weight: 500;
+}
+
+#profile a {
+    color: #3b3b3b;
+}
+
+#profile .profile-content .year-1 {
+    position: relative;
+    bottom: -10vw;
+    animation: slide-up2 .2s ease forwards;
+}
+
+#profile .profile-content .year-2 {
+    position: relative;
+    bottom: -15vw;
+    animation: slide-up2 .2s ease forwards;
+}
+
+#profile .profile-content .year-3 {
+    position: relative;
+    bottom: -20vw;
+    animation: slide-up2 .2s ease forwards;
+}
+
+#profile .profile-content .year-4 {
+    position: relative;
+    bottom: -25vw;
+    animation: slide-up2 .2s ease forwards;
+}
+
+
+#skill{
+    width: 100vw;
+    height: 50vw;
+    position: relative;
+    /* border: 4px solid red; */
+    margin-top: 12vw;
+}
+
+#skill .skill-card ul{
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: 8vw;
+}
+
+#skill .skill-card ul li{
+    width: 21vw;
+    height: 35vw;
+    position: relative;
+    padding: 1vw;
+    border-radius: 0 2vw 2vw 0;
+}
+
+#skill .skill-card ul li strong{
+    position: absolute;
+    right: 1vw;
+    font-size: calc(100vw * 30 / 1920);
+}
+
+#skill .skill-card ul li p{
+    margin-top: 5vw;
+    line-height: 150%;
+    font-size: calc(100vw * 23 / 1920);
+}
+#skill .skill-card ul li:nth-child(1){
+    background-color: #3b3b3b;
+    z-index: 4;
+}
+#skill .skill-card ul li:nth-child(2){
+    background-color: #8e8e8e;
+    z-index: 3;
+    position: relative;
+    right: 7vw;
+}
+#skill .skill-card ul li:nth-child(3){
+    background-color: #c0c0c0;
+    z-index: 2;
+    position: relative;
+    right: 17vw;
+}
+
+#skill h1{
+    font-size: calc(100vw * 300 / 1920);
+    position: absolute;
+    right: 3vw;
+    bottom: 2vw;
+    color: #E2E2E2;
+    font-weight: 800;
+}
+
+
+
+#story {
+    width: 100vw;
+    height: 60vw;
+    position: relative;
+    /* border: 4px solid red; */
+    margin-top: 12vw;
+}
+
+#story strong {
+    position: absolute;
+    font-size: calc(100vw * 600 / 1920);
+    z-index: 1;
+    color: #E2E2E2;
+    font-weight: 900;
+}
+
+#story .story-left {
+    width: 35%;
+    float: left;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9vh;
+}
+
+#story .story-left h2 {
+    color: #fff;
+    font-size: calc(100vw * 40 / 1920);
+    z-index: 4;
+}
+
+#story .story-left h3 {
+    color: #8e8e8e;
+    font-size: calc(100vw * 40 / 1920);
+    font-weight: 400;
+    z-index: 4;
+}
+
+#story .story-left .story-year {
+    width: 18vh;
+    height: 18vh;
+    border-radius: 50%;
+    background-color: #8e8e8e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(100vw * 45 / 1920);
+    animation: moveUpDown 4s linear infinite alternate;
+}
+
+#story .dot-line {
+    position: relative;
+    height: 70vh;
+    transform: rotate(18deg);
+    transform-origin: top center;
+    /* 선의 변환 기준점 설정 (상단 중앙) */
+    animation: moveUpDown 4s linear infinite alternate;
+    /* 키프레임 애니메이션 설정 */
+    z-index: 4;
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(18deg);
+        /* 시작과 끝 위치 (고정된 상태) */
+    }
+
+    50% {
+        transform: translateY(0px) rotate(-18deg);
+        /* 중간 위치 (아래로 이동) */
+    }
+}
+
+@keyframes circleMove {
+
+    0%,
+    100% {
+        transform: translateY(13vw)
+    }
+
+    50% {}
+}
+
+
+
+#story .story-right {
+    width: 65%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12vw;
+    font-size: calc(100vw * 22 / 1920);
+    line-height: 140%;
+    color: #8e8e8e;
+}
+
+#story .story-right p {
+    font-weight: 300;
+    z-index: 4;
+    padding: 2vw;
+}
+
+
+#keyword{
+    width: 100vw;
+    height: 55vw;
+    /* border: 4px solid red; */
+    margin-top: 12vw;
+    position: relative;
+}
+
+#keyword strong{
+    position: absolute;
+    right: -3vw;
+    font-size: calc(100vw * 450 / 1920);
+    font-weight: 800;
+    color: #E2E2E2;
+}
+
+#keyword h1{
+    position: absolute;
+    left: 0vw;
+    font-size: calc(100vw * 250 / 1920);
+    bottom: 2vw;
+    font-weight: 800;
+    color: #E2E2E2;
+    z-index: -2;
+}
+
+#keyword ul{
+    list-style: none;
+}
+
+#keyword ul li{
+    font-size: calc(100vw * 210 / 1920);
+    z-index: 4;
+    color: #4E4E4E;
+}
+
+#keyword ul li:nth-child(1){}
+
+#keyword ul li:nth-child(2){
+    position: relative;
+    left: 35vw;
+}
+#keyword ul li:nth-child(3){
+    position: relative;
+    left: 65vw;
+}
+
+
+#project{
+    width: 100vw;
+    height: 80vw;
+    /* border: 4px solid red; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 32vw;
+}
+
+#project strong{
+    position: absolute;
+    font-size: calc(100vw * 200 / 1920);
+    z-index: 1;
+    color: #E2E2E2;
+    font-weight: 900;
+    top: -9vw;
+    left: 6.5vw;
+}
+
+#project .project-top .meo{
+    width: 87vw;
+    height: 30vw;
+    /* border: 4px solid red; */
+    position: relative;
+    margin: 0.5vw;
+    background-color: #B7B7B7;
+    border-radius: 1vw;
+}
+
+#project .project-top .meo h1{
+    position: absolute;
+    left: 1vw;
+    bottom: 7vw;
+    font-size: calc(100vw * 40 / 1920);
+}
+
+#project .project-top .meo h2{
+    position: absolute;
+    left: 1vw;
+    bottom: 5vw;
+    font-size: calc(100vw * 30 / 1920);
+}
+
+#project .project-top .meo h3{
+    position: absolute;
+    left: 1vw;
+    bottom: 3vw;
+    font-size: calc(100vw * 20 / 1920);
+}
+
+#project .project-top .meo h4{
+    position: absolute;
+    left: 1vw;
+    bottom: 1.6vw;
+    font-size: calc(100vw * 20 / 1920);
+}
+
+
+#project .project-bottom{
+    display: flex;
+}
+
+
+#project .project-bottom .inpi{
+    width: 35vw;
+    height: 41vw;
+    /* border: 4px solid red; */
+    position: relative;
+    margin: 0.5vw;
+    background-color: #B7B7B7;
+    border-radius: 1vw;
+}
+
+#project .project-bottom .inpi h1{
+    position: absolute;
+    left: 1vw;
+    bottom: 7vw;
+    font-size: calc(100vw * 40 / 1920);
+}
+
+#project .project-bottom .inpi h2{
+    position: absolute;
+    left: 1vw;
+    bottom: 5vw;
+    font-size: calc(100vw * 30 / 1920);
+}
+
+#project .project-bottom .inpi h3{
+    position: absolute;
+    left: 1vw;
+    bottom: 3vw;
+    font-size: calc(100vw * 20 / 1920);
+}
+
+
+#project .project-bottom ul{
+    display: flex;
+    list-style-type: none;
+}
+
+#project .project-bottom ul li{
+    background-color: #B7B7B7;
+    border-radius: 1vw;
+}
+
+#project .project-bottom .book{
+    width: 25vw;
+    height: 20vw;
+    /* border: 4px solid red; */
+    position: relative;
+    margin: 0.5vw;
+}
+
+#project .project-bottom .book h1{
+    position: absolute;
+    left: 1vw;
+    bottom: 4.6vw;
+    font-size: calc(100vw * 30 / 1920);
+}
+
+#project .project-bottom .book h2{
+    position: absolute;
+    left: 1vw;
+    bottom: 3.4vw;
+    font-size: calc(100vw * 20 / 1920);
+}
+
+#project .project-bottom .book h3{
+    position: absolute;
+    left: 1vw;
+    bottom: 1.4vw;
+    font-size: calc(100vw * 17 / 1920);
+}
+
+
+#project .project-bottom .pea{
+    width: 25vw;
+    height: 20vw;
+    /* border: 4px solid red; */
+    position: relative;
+    margin: 0.5vw;
+}
+
+#project .project-bottom .pea h1{
+    position: absolute;
+    left: 1vw;
+    bottom: 4.6vw;
+    font-size: calc(100vw * 30 / 1920);
+}
+
+#project .project-bottom .pea h2{
+    position: absolute;
+    left: 1vw;
+    bottom: 3.4vw;
+    font-size: calc(100vw * 20 / 1920);
+}
+
+#project .project-bottom .pea h3{
+    position: absolute;
+    left: 1vw;
+    bottom: 1.4vw;
+    font-size: calc(100vw * 17 / 1920);
+}
+
+#project .project-bottom .toast-1{
+    width: 25vw;
+    height: 20vw;
+    /* border: 4px solid red; */
+    position: relative;
+    margin: 0.5vw;
+}
+
+#project .project-bottom .toast-1 h1{
+    position: absolute;
+    left: 1vw;
+    bottom: 4.6vw;
+    font-size: calc(100vw * 30 / 1920);
+}
+
+#project .project-bottom .toast-1 h2{
+    position: absolute;
+    left: 1vw;
+    bottom: 3.4vw;
+    font-size: calc(100vw * 20 / 1920);
+}
+
+#project .project-bottom .toast-1 h3{
+    position: absolute;
+    left: 1vw;
+    bottom: 1.4vw;
+    font-size: calc(100vw * 17 / 1920);
+}
+
+#project .project-bottom .toast-2{
+    width: 25vw;
+    height: 20vw;
+    /* border: 4px solid red; */
+    position: relative;
+    margin: 0.5vw;
+}
+
+#project .project-bottom .toast-2 h1{
+    position: absolute;
+    left: 1vw;
+    bottom: 4.6vw;
+    font-size: calc(100vw * 30 / 1920);
+}
+
+#project .project-bottom .toast-2 h2{
+    position: absolute;
+    left: 1vw;
+    bottom: 3.4vw;
+    font-size: calc(100vw * 20 / 1920);
+}
+
+#project .project-bottom .toast-2 h3{
+    position: absolute;
+    left: 1vw;
+    bottom: 1.4vw;
+    font-size: calc(100vw * 17 / 1920);
+}
+
+
+footer{
+    width: 100vw;
+    height: 30vw;
+}
